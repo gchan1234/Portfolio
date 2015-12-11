@@ -13,9 +13,9 @@ body{
 
 /*
 Setting up*/
-div {
+/*div {
 	border: 1px solid Chocolate;
-}
+}*/
 
 /*
 Navigation*/
@@ -102,6 +102,10 @@ Navigation*/
 
 /*projects*/
 
+.projects {
+	height: 100%;
+}
+
 .projects .content .heading {
 	text-align: center;
 }
@@ -154,6 +158,7 @@ Navigation*/
 	padding-top: 3em;
 	margin-bottom: 2em;
 	background-color:  #A5F2F3;
+	margin-left: 100%;
 }
 
 .p2 .description {
@@ -171,3 +176,52 @@ Navigation*/
 	border: 2.5px solid  #51A5BA;
 	float: right;
 }
+
+/*Footer*/
+
+.social {
+	margin-top: 30em;
+	text-align: center;
+	height: 10em;
+}
+
+
+.social .content > h4 {
+	font-size: 3.5em;
+	margin-bottom: 0.4em;
+	width: 100%;	
+}
+
+.social .content .icons{
+	text-align: center;
+	padding: 0;
+	margin: 0 auto;
+	width: 550px;
+	margin-bottom: 5em;
+}
+
+.social .content .icons > li {
+		display: inline-block;
+		text-align: center;
+		width: 32.7%;
+}
+
+
+.social .content .line {
+	margin-top: 0;
+	margin-bottom: 2em;
+}
+
+.twitter {
+	color: #55acee;
+}
+
+.facebook {
+	color: #4c66a4;
+}
+
+.instagram {
+	color: #3f729b;
+}
+
+
