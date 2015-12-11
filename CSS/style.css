@@ -1,0 +1,173 @@
+/*Global*/
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+	webkit-font-smoothing: antialiased;
+}
+
+/*
+Setting up*/
+div {
+	border: 1px solid Chocolate;
+}
+
+/*
+Navigation*/
+.top-navigation {
+	background-color: #ffcf33;
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+}
+ .top-navigation .content {
+	width: 500px;
+	height: 70px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+ }
+
+ .top-navigation .content .links {
+ 	padding: 0;
+ }
+
+ .top-navigation .content .links > li {
+ 	display: inline-block;
+ 	width: 33.3%;
+ 	float: left;
+ }
+
+ .top-navigation .content .links > li:hover {
+ 	cursor: pointer;
+ 	color: gray;
+ }
+
+/* Heading*/
+.masthead{
+	background-image: url("../Images/header.jpg");
+	background-color: #cccccc;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	background-position: center bottom;
+	height: 40em;
+}
+
+.masthead .content {
+	text-align: center;
+	width: 970px;
+	margin: auto;
+	padding-top: 12em;
+	color: white;
+}
+
+.masthead .content > h1 {
+	font-size: 7em;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+.masthead .content > h3 {
+	font-size: 2.5em;
+	font-weight: lighter;
+}
+
+/*About Me*/
+
+.About-me {
+	text-align: center;
+	margin-bottom: 5em;
+}
+
+.About-me .content > h2 {
+	font-size: 3.5em;
+	margin-bottom: 0.3em;
+}
+
+.line {
+	margin-top: 0;
+	width: 180px;
+	margin-bottom: 4em;
+	height: 3px;
+	background-color: #bbb; 
+	border: none;
+}
+
+/*projects*/
+
+.projects .content .heading {
+	text-align: center;
+}
+
+.projects .content .heading > h2 {
+	font-size: 3.5em;
+	margin-bottom: 0.4em;
+	margin-top: 0.6em;
+}
+
+/*P1*/
+.projects .content .p1 {
+	width: 65%;
+	padding-left: 3em;
+	display: inline-block;
+	padding-bottom: 3em;
+	padding-top: 3em;
+	background-color: #AFEAAA;
+	border-top-right-radius: 170px;
+	border-bottom-right-radius: 170px;
+	margin-bottom: 2em;
+}
+
+.p1 .description {
+	float: left;
+	margin-left: 3em;
+	margin-right: 3em;
+	text-align: center;
+}
+
+.p1-thumbnail {
+	background-size: cover;
+	width: 350px;
+	height: 220px;
+	border-radius: 6px;
+	border: 2.5px solid #41924B;
+}
+
+/*P2*/
+
+.projects .content .p2 {
+	width: 68%;
+	display: inline-block;
+	border-top-left-radius: 170px;
+	border-bottom-left-radius: 170px;
+	float: right;
+	margin-top: 2em;
+	padding-right: 3em;
+	padding-bottom: 3em;
+	padding-top: 3em;
+	margin-bottom: 2em;
+	background-color:  #A5F2F3;
+}
+
+.p2 .description {
+	float: right;
+	margin-right: 2em;
+	margin-left: 3em;
+	text-align: center;
+}
+
+.p2-thumbnail {
+	background-size: cover;
+	width: 350px;
+	height: 220px;
+	border-radius: 6px;
+	border: 2.5px solid  #51A5BA;
+	float: right;
+}
