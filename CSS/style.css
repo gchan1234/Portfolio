@@ -11,6 +11,61 @@ body{
 	webkit-font-smoothing: antialiased;
 }
 
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+a:hover {
+ 	cursor: pointer;
+ }
+
+
+
+/*Green Floating*/
+.caption {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(24,188,156,.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+.caption:hover {
+    opacity: 1;
+}
+
+.caption .caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+.portfolio-link {
+	display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+
 /*
 Setting up*/
 /*div {
@@ -64,8 +119,12 @@ Navigation*/
 	text-align: center;
 	width: 970px;
 	margin: auto;
-	padding-top: 12em;
+	padding-top: 0.1em;
 	color: white;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	/*When using this, I need have some padding for the masthead content*/
 }
 
 .masthead .content > h1 {
@@ -130,10 +189,10 @@ Navigation*/
 }
 
 .p1 .description {
-	float: left;
 	margin-left: 3em;
 	margin-right: 3em;
 	text-align: center;
+	float: left;
 }
 
 .p1-thumbnail {
@@ -159,12 +218,13 @@ Navigation*/
 	margin-bottom: 2em;
 	background-color:  #A5F2F3;
 	margin-left: 100%;
+	padding-left: 7em;
 }
 
 .p2 .description {
 	float: right;
 	margin-right: 2em;
-	margin-left: 3em;
+	margin-left: 2em;
 	text-align: center;
 }
 
@@ -180,13 +240,13 @@ Navigation*/
 /*Footer*/
 
 .social {
-	margin-top: 30em;
+	margin-top: 5em;
 	text-align: center;
 	height: 10em;
 }
 
 
-.social .content > h4 {
+.social .content > h2 {
 	font-size: 3.5em;
 	margin-bottom: 0.4em;
 	width: 100%;	
